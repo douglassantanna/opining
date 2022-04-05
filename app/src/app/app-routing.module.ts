@@ -14,6 +14,7 @@ const routes: Routes = [
         (m) => m.IdentityAuthModule
       ),
   },
+  { path: '', pathMatch: 'full', redirectTo: 'identity-auth' },
 ];
 
 @NgModule({
