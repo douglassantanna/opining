@@ -2,16 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PostsRoutingModule } from './posts-routing.module';
-import { PostsComponent } from './page/posts.component';
+import { DesignSystemModule } from '../design-system/design-system.module';
+import { OpinionComponent } from './page/opinion/opinion.component';
 
 
 @NgModule({
   declarations: [
-    PostsComponent
+  
+    OpinionComponent
   ],
   imports: [
     CommonModule,
-    PostsRoutingModule
+    PostsRoutingModule,
+    DesignSystemModule
   ]
 })
 export class PostsModule { }

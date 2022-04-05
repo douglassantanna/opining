@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
@@ -15,7 +16,7 @@ export class AuthorizationFormComponent implements OnInit {
 
   loginForm: FormGroup = {} as FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -25,10 +26,11 @@ export class AuthorizationFormComponent implements OnInit {
   }
 
   login() {
+    this.router.navigateByUrl('posts');
     console.log(this.loginForm.value);
   }
   signup(){
-    console.log(this.loginForm.value);
+    console.log('um email foi enviado para', this.loginForm.value.email);
   }
   get email() { return this.loginForm.get('email') as FormControl; }
 

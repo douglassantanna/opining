@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DesignSystemModule } from './design-system/design-system.module';
 import { AppRoutingModule } from './app-routing.module';
+import { PostsModule } from './posts/posts.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     DesignSystemModule,
-    IdentityAuthModule
+    IdentityAuthModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

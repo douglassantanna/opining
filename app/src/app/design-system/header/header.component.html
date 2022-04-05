@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="logo">
+    <span id="title"><span style="color: white;">o</span>pining</span>
+  </div>
+  <div class="menu">
+    <button mat-icon-button type="button">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button type="button">
+      <mat-icon>person</mat-icon>
+    </button>
+  </div>
+  <div class="user">
+    <div class="user-info">{{name | slice : 0:1}}</div>
+    <span>{{ name }}</span>
+    <button mat-icon-button type="button" [matMenuTriggerFor]="menu">
+      <mat-icon>expand_circle_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        Configurações</button>
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        Sair</button>
+    </mat-menu>
+  </div>
+</div>
