@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,10 +10,10 @@ export class SigninComponent implements OnInit {
   signinTitle = 'entrar';
   signupTitle = 'criar conta';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
   signup(){
-    alert('Criar conta')
+    this.router.navigateByUrl("create-account");
   }
 }

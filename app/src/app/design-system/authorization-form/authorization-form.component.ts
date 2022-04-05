@@ -12,7 +12,6 @@ export class AuthorizationFormComponent implements OnInit {
   @Input() signupTitle = '';
   @Input() signupButton = false;
   @Input() forgotPassword = false;
-  @Output() signup: EventEmitter<void> = new EventEmitter();
 
   loginForm: FormGroup = {} as FormGroup;
 
@@ -26,6 +25,9 @@ export class AuthorizationFormComponent implements OnInit {
   }
 
   login() {
+    console.log(this.loginForm.value);
+  }
+  signup(){
     console.log(this.loginForm.value);
   }
   get email() { return this.loginForm.get('email') as FormControl; }

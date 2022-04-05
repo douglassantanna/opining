@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { IdentityAuthRoutingModule } from './identity-auth-routing.module';
 import { SigninComponent } from './authorization/page/signin/signin.component';
+import { CreateAccountComponent } from './authorization/page/create-account/create-account.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -12,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [SigninComponent],
+  declarations: [SigninComponent, CreateAccountComponent],
   imports: [
     CommonModule,
     IdentityAuthRoutingModule,
