@@ -6,39 +6,13 @@
   </div>
   <div class="vertical-lign"></div>
   <div class="right-container">
-    <div class="center">
-      <h1>Iniciar sessão</h1>
-      <form [formGroup]="loginForm">
-
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
-          <mat-error *ngIf="email.hasError('email') && !email.hasError('required')">
-            Por favor, insira um e-mail válido.
-          </mat-error>
-          <mat-error *ngIf="email.hasError('required')">
-            Campo e-mail é <strong>obrigatório</strong>
-          </mat-error>
-        </mat-form-field>
-
-        <mat-form-field appearance="outline">
-          <mat-label>Senha</mat-label>
-          <input type="password" matInput formControlName="password" autocomplete="on">
-          <mat-error *ngIf="password.hasError('required')">
-            Campo senha é <strong>obrigatório</strong>
-          </mat-error>
-          <mat-error *ngIf="password.hasError('minlength')">
-            Mínimo de 6 dígitos exigidos
-          </mat-error>
-        </mat-form-field>
-        <div class="password-recovery">
-          <span>Ou <a href="#forgot-password">esqueci minha senha</a></span>
-        </div>
-        <div class="actions">
-          <button class="btn-primary" mat-raised-button (click)="login()">entrar</button>
-          <button class="btn-secondary" mat-raised-button type="button">criar conta</button>
-        </div>
-      </form>
-    </div>
+    <op-authorization-form
+    [title]="title"
+    [signinTitle]="signinTitle"
+    [signupTitle]="signupTitle"
+    [signupButton]="true"
+    [forgotPassword]="true"
+    (signup)="signup()"
+    ></op-authorization-form>
   </div>
 </div>

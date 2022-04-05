@@ -1,0 +1,28 @@
+.center {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  gap: 20px;
+}
+.center h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+}
+mat-form-field {
+  width: 100%;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.password-recovery {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}

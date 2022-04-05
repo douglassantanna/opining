@@ -42,6 +42,10 @@ img {
   margin-top: 10%;
   gap: 20px;
 }
+.center h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+}
 mat-form-field {
   width: 100%;
 }
