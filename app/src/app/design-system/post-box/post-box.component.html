@@ -1,0 +1,30 @@
+<div class="box mat-elevation-z3">
+<div class="top">
+  <div class="user-info">
+    {{ name | slice : 0:1}}
+  </div>
+  <div class="text">
+    <mat-form-field appearance="outline">
+      <textarea matInput #message maxlength="256" placeholder="Ex. diga o q está rolando..."></textarea>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+  </div>
+</div>
+<div class="bottom">
+  <div class="icons">
+    <button mat-icon-button>
+      <mat-icon >image</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon >sentiment_satisfied_alt</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon >room</mat-icon>
+    </button>
+  </div>
+  <div class="button">
+    <button type="submit" mat-raised-button class="btn-primary">opinar</button>
+  </div>
+</div>
+</div>
+
