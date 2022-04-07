@@ -6,6 +6,7 @@
 - Autenticação via token JWT
 - MongoDB como banco de dados para os post
 - SQL Server como banco de dados para os usuários
+- Docker
 
 ## Arquitetura de microserviços será um desafio para este projeto.
 
