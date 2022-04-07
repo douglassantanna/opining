@@ -1,5 +1,5 @@
 .box {
-  width: 100%;
+  max-width: 80%;
   height: 170px;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
   height: 40px;
   border-radius: 100%;
   background-color: white;
+  border: 0.1px solid #00b0ff;
   color: #00b0ff;
 }
 .text {

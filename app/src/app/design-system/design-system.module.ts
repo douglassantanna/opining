@@ -11,9 +11,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { PostBoxComponent } from './post-box/post-box.component';
+import { ShowPostComponent } from './show-post/show-post.component';
 
 @NgModule({
-  declarations: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent],
+  declarations: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -24,6 +25,6 @@ import { PostBoxComponent } from './post-box/post-box.component';
     MatIconModule,
     MatMenuModule,
   ],
-  exports: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent],
+  exports: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent],
 })
 export class DesignSystemModule {}
