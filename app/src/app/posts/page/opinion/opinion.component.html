@@ -1,7 +1,14 @@
 <op-header></op-header>
 <div class="container">
+  <div class="left"></div>
   <div class="center">
     <op-post-box></op-post-box>
-    <op-show-post></op-show-post>
+    <op-show-post
+    [email]="email"
+    [message]="message"
+    [name]="name"
+    [time]="time"
+    ></op-show-post>
   </div>
+  <div class="right"></div>
 </div>
