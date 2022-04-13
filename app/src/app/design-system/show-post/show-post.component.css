@@ -1,13 +1,14 @@
 .box {
-  min-height: 17vh;
+  min-height: 10vh;
   height: 100%;
   width: 50vw;
-  min-width: 40vmin;
+  min-width: 80vmin;
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 15fr;
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
+  gap: 8px;
 }
 .user-info {
   display: flex;
@@ -59,5 +60,5 @@ mat-icon {
 }
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
