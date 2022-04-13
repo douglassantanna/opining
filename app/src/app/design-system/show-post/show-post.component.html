@@ -1,17 +1,17 @@
 <div class="box mat-elevation-z3">
   <div class="left">
     <div class="user-info">
-      {{ name | slice: 0:1 }}
+      {{ viewPost.user.name | slice: 0:1 }}
     </div>
   </div>
   <div class="right">
     <div class="top">
-      <span id="name"> {{ name }}</span>
-      <span id="email"> {{ email }}</span>
-      <span id="time"> {{ time }}</span>
+      <span id="name"> {{ viewPost.user.name }}</span>
+      <span id="email"> {{ viewPost.user.email }}</span>
+      <span id="time"> {{ viewPost.user.createdAt | date }}</span>
     </div>
     <div class="message">
-      <span> {{ message }}</span>
+      <span> {{ viewPost.message }}</span>
     </div>
     <div class="icons">
       <button mat-icon-button>

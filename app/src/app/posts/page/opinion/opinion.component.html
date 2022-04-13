@@ -2,12 +2,11 @@
 <div class="container">
   <div class="left"></div>
   <div class="center">
-    <op-post-box></op-post-box>
+    <op-post-box
+    ></op-post-box>
     <op-show-post
-    [email]="email"
-    [message]="message"
-    [name]="name"
-    [time]="time"
+    *ngFor="let post of dataSource"
+    [viewPost]="post"
     ></op-show-post>
   </div>
   <div class="right"></div>

@@ -1,3 +1,4 @@
+import { ViewPost } from './../../posts/interfaces/post';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./show-post.component.css'],
 })
 export class ShowPostComponent implements OnInit {
-  @Input() time = '';
-  @Input() name = '';
-  @Input() email = '';
-  @Input() message ='';
+  @Input() viewPost!: ViewPost
 
   constructor() {}
 

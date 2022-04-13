@@ -4,7 +4,7 @@
       {{ name | slice: 0:1 }}
     </div>
   </div>
-  <div class="right">
+  <form class="right" [formGroup]="post" (ngSubmit)="submitPost()">
     <div class="text">
       <mat-form-field appearance="outline">
         <textarea
@@ -12,6 +12,7 @@
           #message
           maxlength="256"
           placeholder="Ex. diga o q está rolando..."
+          formControlName="message"
         ></textarea>
         <mat-hint align="end">{{ message.value.length }} / 256</mat-hint>
       </mat-form-field>
@@ -29,10 +30,10 @@
         </button>
       </div>
       <div class="button">
-        <button type="submit" mat-raised-button class="btn-primary">
+        <button type="submit" [disabled]="!post.valid" mat-raised-button class="btn-primary">
           opinar
         </button>
       </div>
     </div>
-  </div>
+  </form>
 </div>
