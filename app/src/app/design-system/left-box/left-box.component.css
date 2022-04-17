@@ -1,0 +1,20 @@
+.box {
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  /* backdrop-filter: blur(20px); */
+  }
+span {
+  color: darkgray;
+}
+mat-icon {
+  color: #00b0ff;
+}
+.refresh {
+  display: flex;
+  justify-content: center;
+}
+.advice {
+  display: flex;
+  justify-content: center;
+}

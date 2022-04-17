@@ -12,9 +12,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { PostBoxComponent } from './post-box/post-box.component';
 import { ShowPostComponent } from './show-post/show-post.component';
+import { LeftBoxComponent } from './left-box/left-box.component';
 
 @NgModule({
-  declarations: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent],
+  declarations: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent, LeftBoxComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -25,6 +26,6 @@ import { ShowPostComponent } from './show-post/show-post.component';
     MatIconModule,
     MatMenuModule,
   ],
-  exports: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent],
+  exports: [AuthorizationFormComponent, HeaderComponent, PostBoxComponent, ShowPostComponent, LeftBoxComponent],
 })
 export class DesignSystemModule {}
