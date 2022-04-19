@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { PostBoxComponent } from '../post-box/post-box.component';
-import { RawPostBoxComponent } from '../raw-post-box/raw-post-box.component';
 
 @Component({
   selector: 'op-header',
@@ -10,18 +7,8 @@ import { RawPostBoxComponent } from '../raw-post-box/raw-post-box.component';
 })
 export class HeaderComponent implements OnInit {
   name = 'Douglas';
-  constructor(private dialog: MatDialog) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  openDialog() {
-    const dialogRef = this.dialog.open(RawPostBoxComponent, {
-      hasBackdrop: true
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
   }
 }

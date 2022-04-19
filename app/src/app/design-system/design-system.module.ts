@@ -16,6 +16,7 @@ import { LeftBoxComponent } from './left-box/left-box.component';
 import { PostBoxComponent } from './post-box/post-box.component';
 import { ShowPostComponent } from './show-post/show-post.component';
 import { RawPostBoxComponent } from './raw-post-box/raw-post-box.component';
+import { FloatingPostButtonComponent } from './floating-post-button/floating-post-button.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RawPostBoxComponent } from './raw-post-box/raw-post-box.component';
     ShowPostComponent,
     LeftBoxComponent,
     RawPostBoxComponent,
+    FloatingPostButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -44,7 +46,8 @@ import { RawPostBoxComponent } from './raw-post-box/raw-post-box.component';
     PostBoxComponent,
     ShowPostComponent,
     LeftBoxComponent,
-    RawPostBoxComponent
+    RawPostBoxComponent,
+    FloatingPostButtonComponent
   ],
 })
 export class DesignSystemModule {}

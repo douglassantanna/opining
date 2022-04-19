@@ -13,5 +13,7 @@
   flex-direction: column;
   gap: 20px;
 }
-/* .right {
-} */
+.right {
+  display: flex;
+  justify-content: end;
+}

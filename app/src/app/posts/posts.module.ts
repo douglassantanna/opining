@@ -8,13 +8,12 @@ import { OpinionComponent } from './page/opinion/opinion.component';
 
 @NgModule({
   declarations: [
-  
     OpinionComponent
   ],
   imports: [
     CommonModule,
     PostsRoutingModule,
-    DesignSystemModule
+    DesignSystemModule,
   ]
 })
 export class PostsModule { }
