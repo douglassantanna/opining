@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PostBoxComponent } from '../post-box/post-box.component';
+import { RawPostBoxComponent } from '../raw-post-box/raw-post-box.component';
 
 @Component({
   selector: 'op-header',
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(PostBoxComponent, {
+    const dialogRef = this.dialog.open(RawPostBoxComponent, {
       hasBackdrop: true
     });
 
