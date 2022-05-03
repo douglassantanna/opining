@@ -11,8 +11,9 @@
 ## Stacks
 - .NET 5 para a criação da API REST para usuários e autenticação JWT
 - LINQ e EF Core para criação/manipulação de queries do banco de dados de usuários (SQL Server)
-- NODE.JS para o desenvolvimento da API REST dos posts e criação/manipulação do banco de dados (MongoDB)
+- NODE.JS e Overnight.JS para o desenvolvimento da API REST dos posts e criação/manipulação do banco de dados (MongoDB)
 - Angular 13 para o desenvolvimento do frontend.
+- Jest para testes
 
 ## Para o layout e design, seguirei o protótipo que desenvolvi no Figma.
 https://www.figma.com/file/sDF002rm8L1ZKlsLuF4vIl/opining?node-id=0%3A1
