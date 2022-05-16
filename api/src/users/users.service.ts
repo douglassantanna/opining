@@ -5,7 +5,6 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User, UserDocument } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
-import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable()
 export class UsersService {
