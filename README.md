@@ -4,14 +4,11 @@
 ## Iniciei o desenvolvimento desse projeto para estudar novas tecnologias e implementar outras que já aprendi/venho aprendendo.
 ## Tecnologias que serão implementadas:
 - Autenticação via token JWT utilizando.
-- SQL Server como banco de dados para os usuários.
-- MongoDB como banco de dados para os post.
 - Docker
 
 ## Stacks
-- .NET 5 para a criação da API REST para usuários e autenticação JWT
-- LINQ e EF Core para criação/manipulação de queries do banco de dados de usuários (SQL Server)
-- NODE.JS e Overnight.JS para o desenvolvimento da API REST dos posts e criação/manipulação do banco de dados (MongoDB)
+- Nestjs para o desenvolvimento da API REST
+- MongoDB como base de dados
 - Angular 13 para o desenvolvimento do frontend.
 - Jest para testes
 
